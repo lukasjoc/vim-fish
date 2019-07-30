@@ -20,15 +20,15 @@ function! fish#Indent()
     return indent(l:prevlnum) + l:indent
 endfunction
 
-" function! fish#Format()
-"     if mode() =~# '\v^%(i|R)$'
-"         return 1
-"     else
-"         let l:command = v:lnum.','.(v:lnum+v:count-1).'!fish_indent'
-"         echo l:command
-"         execute l:command
-"     endif
-" endfunction
+function! fish#Format()
+    if mode() =~# '\v^%(i|R)$'
+        return 1
+    else
+        let l:command = v:lnum.','.(v:lnum+v:count-1).'!fish_indent'
+        echo l:command
+        execute l:command
+    endif
+endfunction
 
 function! fish#Fold()
     let l:line = getline(v:lnum)
