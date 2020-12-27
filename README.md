@@ -90,3 +90,5 @@ Note that this also affects what `:sh[ell]` launches, so if you care about that
 you might want to set it to your second best shell instead.  If you use Vim in
 the terminal you could also train yourself to use `:st[op]` or CTRL-Z instead
 and then `fg` in fish to get back to Vim.
+
+# Reduced to what is needed
